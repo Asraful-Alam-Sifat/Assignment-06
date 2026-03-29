@@ -6,7 +6,7 @@ import React from 'react';
 const NavBar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 shadow-sm px-3 lg:px-10  flex justify-evenly">
+            <div className="navbar bg-base-100 shadow-sm px-3 lg:px-10  flex justify-around">
          
             <div className="navbar-start w-[20%]">
     <div className="dropdown">
@@ -41,7 +41,7 @@ const NavBar = () => {
     <ShoppingCart />
     <button className='text-base font-semibold'>LogIn</button>
     <div className="navbar-end">
-    <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">Get Started</a>
+    <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:from-[#6351f8] hover:to-[#a83dfc] text-white rounded-full">Get Started</a>
   </div>
   </div>
   
