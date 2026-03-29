@@ -2,6 +2,7 @@
 import './App.css'
 import HeroBanner from './components/HeroBanner/HeroBanner'
 import NavBar from './components/NavBar/NavBar'
+import StatsBar from './components/StatsBar/StatsBar'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <>
     <NavBar></NavBar>
     <HeroBanner></HeroBanner>
+    <StatsBar></StatsBar>
     </>
   )
 }
