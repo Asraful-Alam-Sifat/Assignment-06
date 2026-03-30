@@ -11,7 +11,7 @@ import Cart from './components/Cart/Cart';
 
 
 const getTools = async() => {
-  const res = await fetch('/public/Data.json');
+  const res = await fetch('/Data.json');
   return res.json();
 }
 
