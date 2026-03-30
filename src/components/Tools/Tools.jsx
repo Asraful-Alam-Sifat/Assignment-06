@@ -1,0 +1,36 @@
+import React, { use } from 'react';
+import CheckIcon from '../../assets/Check.png';
+
+const Tools = ({toolsPromise}) => {
+    const toolsData = use(toolsPromise);
+    console.log(toolsData);
+    return (
+        <div className='container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-2'>
+            {toolsData.map(tool => 
+                <div key={tool.id} className='border-2 border-gray-300 rounded-xl p-5 max-w-75 '>
+                    <div>
+                        <img className='w-9' src={tool.icon} alt={tool.name} />
+                        <div>{tool.tag}</div>
+                    </div>
+
+                    <h4>{tool.name}</h4>
+                    <p>{tool.description}</p>
+
+                    <h4><span>${tool.price}</span>/{tool.period}</h4>
+                    <ul>
+                        {tool.features.map((feature, index) => {
+                            return <li key={index} className='flex gap-1.5'>
+                              <img src={CheckIcon} alt="Check" />
+                                {feature}</li>
+                        })}
+                    </ul>
+
+                    <button className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-4 rounded-full font-bold text-xl text-white mr-7 hover:from-[#6351f8] hover:to-[#a83dfc] w-full'>Buy Now</button>
+
+                </div>
+            )}
+        </div>
+    );
+};
+
+export default Tools;
