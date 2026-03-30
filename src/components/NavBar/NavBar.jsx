@@ -5,8 +5,8 @@ import React from 'react';
 
 const NavBar = () => {
     return (
-        <div>
-            <div className="navbar bg-base-100 shadow-sm px-3 lg:px-10  flex justify-around">
+        <div >
+            <div className="navbar bg-base-100 shadow-sm px-3 lg:px-10  flex justify-around ">
          
             <div className="navbar-start w-[20%]">
     <div className="dropdown">

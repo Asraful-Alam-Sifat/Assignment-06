@@ -5,9 +5,9 @@ const Tools = ({toolsPromise}) => {
     const toolsData = use(toolsPromise);
     console.log(toolsData);
     return (
-        <div className='container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-2'>
+        <div className='max-w-260 mx-auto mt-15 grid grid-cols-1 justify-center md:grid-cols-3 gap-8 md:gap-x-7'>
             {toolsData.map(tool => 
-                <div key={tool.id} className='border-2 border-gray-300 rounded-xl p-5 max-w-75 '>
+                <div key={tool.id} className='border-2 border-gray-300 rounded-xl p-5 w-full md:max-w-80 mx-auto'>
                     <div>
                         <img className='w-9' src={tool.icon} alt={tool.name} />
                         <div>{tool.tag}</div>

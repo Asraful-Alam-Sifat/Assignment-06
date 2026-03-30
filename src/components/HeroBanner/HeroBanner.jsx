@@ -5,8 +5,8 @@ import WatchDemoImg from '../../assets/Play.png'
 
 const HeroBanner = () => {
     return (
-        <div className='container flex justify-between mt-20 mx-auto items-center'>
-            <div className='max-w-160 ml-40'>
+        <div className='container flex flex-col-reverse md:flex-row gap-5  md:justify-between mt-20 mx-auto items-center'>
+            <div className='max-w-160 ml-7 md:ml-40'>
                 <div className='flex gap-3 items-center bg-[#e1e7ffFF] rounded-full w-max px-3 py-1'>
                     <img className='w-5 h-5' src={BadgeImg} alt="Badge Image" />
                     <p className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-base font-medium'>New: AI-Powered Tools Available</p>
@@ -18,8 +18,11 @@ const HeroBanner = () => {
                         <img src={WatchDemoImg} alt="Watch Demo" />
                         Watch Demo</button>
             </div>
-            <div className='mr-20'>
-                <img src={BannerImg} alt="Banner Image" />
+            <div className=' md:mr-20 flex-1 flex justify-center md:justify-end min-w-75 '>
+                <img 
+                    className=' w-125 h-auto object-cover block mx-auto'
+                     src={BannerImg}
+                      alt="Banner Image" />
             </div>
         </div>
     );

@@ -21,13 +21,13 @@ const toolsPromise = getTools();
 
   return (
    <body>
-    <header>
+    <header className="overflow-x-hidden">
         <NavBar/>
         <HeroBanner/>
         <StatsBar/>
     </header>
     
-    <main>
+    <main className="overflow-x-hidden p-5">
        <ToogleBtn/>
       
            <Suspense fallback={<span className="loading loading-dots loading-xl text-center items-center"></span>}>
