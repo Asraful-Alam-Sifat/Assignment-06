@@ -6,6 +6,7 @@ const ToolsCard = ({tool, cartsData, setCartsData}) => {
 
     const handleSoldOut = () => {
         setIsSoldOut(true);
+        if(isSoldOut) return;
         setCartsData([...cartsData, tool]);
     }
     return (

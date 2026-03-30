@@ -3,9 +3,9 @@ import { ShoppingCart } from 'lucide-react';
 import React from 'react';
 
 
-const NavBar = () => {
+const NavBar = ({ cartsData }) => {
     return (
-        <div >
+        <div className=''>
             <div className="navbar bg-base-100 shadow-sm px-3 lg:px-10  flex justify-around ">
          
             <div className="navbar-start w-[20%]">
@@ -38,7 +38,11 @@ const NavBar = () => {
   
 
   <div className='flex gap-5 items-center'>
-    <ShoppingCart />
+    <div className='flex relative'>
+      <ShoppingCart />
+      {cartsData.length > 0 && <div className='bg-orange-400 text-white rounded-full absolute -top-2 -right-1.5 text-sm h-4.5 w-4.5 flex items-center justify-center '><p>{cartsData.length}</p></div>}
+    </div>
+    
     <button className='text-base font-semibold'>LogIn</button>
     <div className="navbar-end">
     <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:from-[#6351f8] hover:to-[#a83dfc] text-white rounded-full">Get Started</a>

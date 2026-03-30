@@ -25,9 +25,9 @@ const [cartsData, setCartsData] = useState([]);
 
 
   return (
-   <section>
+   <section className=''>
     <header className="overflow-x-hidden">
-        <NavBar/>
+        <NavBar  cartsData={cartsData} />
         <HeroBanner/>
         <StatsBar/>
     </header>
