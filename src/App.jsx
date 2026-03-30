@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
 import './App.css';
 import HeroBanner from './components/HeroBanner/HeroBanner';
 import NavBar from './components/NavBar/NavBar';
@@ -19,6 +19,9 @@ const getTools = async() => {
 
 function App() {
 const toolsPromise = getTools();
+const [toogleBtn, setToogleBtn] = useState('Products');
+const [cartsData, setCartsData] = useState([]);
+console.log(cartsData);
 
   return (
    <section>
@@ -30,15 +33,22 @@ const toolsPromise = getTools();
     
     <main className="overflow-x-hidden p-5">
 
-       <ToogleBtn/>
+       <ToogleBtn
+        setToogleBtn={setToogleBtn}
+       />
            <Suspense fallback={<div 
               className='container mx-auto flex justify-center items-center h-96'>
                 <span 
                 className="loading loading-dots loading-xl text-center items-center "></span>
                 </div>}>
-               <Tools toolsPromise={toolsPromise} />
+
+               {toogleBtn === 'Products' && <Tools 
+                   toolsPromise={toolsPromise}
+                    cartsData={cartsData}
+                     setCartsData={setCartsData} />}
+
+               {toogleBtn === 'Cart' && <Cart />}
            </Suspense>
-       <Cart></Cart>
         
     </main>
 

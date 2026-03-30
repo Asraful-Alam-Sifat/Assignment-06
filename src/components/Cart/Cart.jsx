@@ -3,7 +3,7 @@ import React from 'react';
 
 const Cart = () => {
     return (
-        <div className='container mx-auto border border-gray-100 rounded-xl px-10 py-13 shadow-xs mt-15 hidden'>
+        <div className='container mx-auto border border-gray-100 rounded-xl px-10 py-13 shadow-xs mt-15 '>
             <h1 className='font-bold text-xl '>Your Cart</h1>
             
             <section className=' flex flex-col justify-center items-center mt-25 mb-25'>
