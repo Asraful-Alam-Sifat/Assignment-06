@@ -86,5 +86,49 @@
     "tagType": "new",
     "features": ["4K export", "Cloud storage", "Stock audio library"],
     "icon": "https://i.ibb.co.com/MkddTrg1/download.png"
+  },
+  {
+    "id": 10,
+    "name": "Cloud Security Shield",
+    "description": "Enterprise-grade protection for your web applications with real-time threat monitoring.",
+    "price": 150,
+    "period": "monthly",
+    "tag": "Enterprise",
+    "tagType": "best-seller",
+    "features": ["DDoS protection", "SSL certificates", "24/7 Support"],
+    "icon": "https://img.icons8.com/fluency/48/shield.png"
+  },
+  {
+    "id": 11,
+    "name": "Brand Identity Suite",
+    "description": "A comprehensive kit for startups to create logos, brand guidelines, and pitch decks.",
+    "price": 199,
+    "period": "one-time",
+    "tag": "New Release",
+    "tagType": "new",
+    "features": ["Vector logo files", "Color palettes", "Presentation templates"],
+    "icon": "https://img.icons8.com/fluency/48/design.png"
+  },
+  {
+    "id": 12,
+    "name": "DevOps Automator",
+    "description": "Streamline your deployment pipeline with automated CI/CD workflows and server monitoring.",
+    "price": 85,
+    "period": "monthly",
+    "tag": "Pro Choice",
+    "tagType": "popular",
+    "features": ["Auto-scaling", "Error logging", "GitHub integration"],
+    "icon": "https://img.icons8.com/fluency/48/code.png"
+  },
+  {
+    "id": 13,
+    "name": "Email Growth Engine",
+    "description": "Advanced email marketing automation with high deliverability and A/B testing capabilities.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "High ROI",
+    "tagType": "best-seller",
+    "features": ["Smart segmentation", "Drag-drop builder", "Heatmap analytics"],
+    "icon": "https://i.ibb.co.com/vvKJjDdQ/email-marketing-growth-icon-vector-59958799.avif"
   }
 ]
