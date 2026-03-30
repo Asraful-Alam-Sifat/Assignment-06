@@ -1,7 +1,9 @@
 import { ShoppingCart } from 'lucide-react';
 import React from 'react';
+import ToolsInCart from './ToolsInCart';
 
-const Cart = () => {
+const Cart = ({ cartsData }) => {
+   
     return (
         <div className='container mx-auto border border-gray-100 rounded-xl px-10 py-13 shadow-xs mt-15 '>
             <h1 className='font-bold text-xl '>Your Cart</h1>
@@ -9,9 +11,9 @@ const Cart = () => {
             <section className=' flex flex-col justify-center items-center mt-25 mb-25'>
                <ShoppingCart 
                className='w-38 h-38 text-gray-400'/>
-               <h3 className='font-bold text-lg text-gray-500 '>Your Cart Is Empty</h3>
+               <h3 className='font-bold text-lg text-gray-400 mt-8 '>Your Cart Is Empty</h3>
             </section>
-            
+            <ToolsInCart cartsData={cartsData} />
         </div>
     );
 };

@@ -21,7 +21,8 @@ function App() {
 const toolsPromise = getTools();
 const [toogleBtn, setToogleBtn] = useState('Products');
 const [cartsData, setCartsData] = useState([]);
-console.log(cartsData);
+// console.log(cartsData);
+
 
   return (
    <section>
@@ -47,7 +48,7 @@ console.log(cartsData);
                     cartsData={cartsData}
                      setCartsData={setCartsData} />}
 
-               {toogleBtn === 'Cart' && <Cart />}
+               {toogleBtn === 'Cart' && <Cart cartsData={cartsData} />}
            </Suspense>
         
     </main>
