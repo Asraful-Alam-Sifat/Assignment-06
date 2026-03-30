@@ -6,6 +6,7 @@ import NavBar from './components/NavBar/NavBar';
 import StatsBar from './components/StatsBar/StatsBar';
 import ToogleBtn from './components/ToogleBtn/ToogleBtn';
 import Tools from './components/Tools/Tools';
+import Cart from './components/Cart/Cart';
 
 
 
@@ -20,7 +21,7 @@ function App() {
 const toolsPromise = getTools();
 
   return (
-   <body>
+   <section>
     <header className="overflow-x-hidden">
         <NavBar/>
         <HeroBanner/>
@@ -28,17 +29,21 @@ const toolsPromise = getTools();
     </header>
     
     <main className="overflow-x-hidden p-5">
+
        <ToogleBtn/>
-      
-           <Suspense fallback={<span className="loading loading-dots loading-xl text-center items-center"></span>}>
+           <Suspense fallback={<div 
+              className='container mx-auto flex justify-center items-center h-96'>
+                <span 
+                className="loading loading-dots loading-xl text-center items-center "></span>
+                </div>}>
                <Tools toolsPromise={toolsPromise} />
            </Suspense>
-       
+       <Cart></Cart>
         
     </main>
 
 
-    </body>
+    </section>
   )
 }
 
