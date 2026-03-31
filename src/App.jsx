@@ -48,7 +48,7 @@ const [cartsData, setCartsData] = useState([]);
                     cartsData={cartsData}
                      setCartsData={setCartsData} />}
 
-               {toogleBtn === 'Cart' && <Cart cartsData={cartsData} />}
+               {toogleBtn === 'Cart' && <Cart cartsData={cartsData} setCartsData={setCartsData} />}
            </Suspense>
         
     </main>
