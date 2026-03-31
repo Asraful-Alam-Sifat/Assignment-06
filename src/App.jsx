@@ -7,6 +7,7 @@ import StatsBar from './components/StatsBar/StatsBar';
 import ToogleBtn from './components/ToogleBtn/ToogleBtn';
 import Tools from './components/Tools/Tools';
 import Cart from './components/Cart/Cart';
+import Steps from './components/Steps/Steps';
 
 
 
@@ -26,16 +27,16 @@ const [cartsData, setCartsData] = useState([]);
 
   return (
    <section className=''>
-    <header className="overflow-x-hidden">
+    <header className="overflow-x-hidden bg-base-100">
         <NavBar  cartsData={cartsData} />
         <HeroBanner/>
         <StatsBar/>
     </header>
     
-    <main className="overflow-x-hidden p-5">
+    <main className="overflow-x-hidden p-5 ">
 
        <ToogleBtn
-        setToogleBtn={setToogleBtn}
+        setToogleBtn={setToogleBtn} 
        />
            <Suspense fallback={<div 
               className='container mx-auto flex justify-center items-center h-96'>
@@ -50,6 +51,10 @@ const [cartsData, setCartsData] = useState([]);
 
                {toogleBtn === 'Cart' && <Cart cartsData={cartsData} setCartsData={setCartsData} />}
            </Suspense>
+
+           <section className='bg-base-200 w-full'>
+            <Steps/>
+           </section>
         
     </main>
 

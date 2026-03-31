@@ -5,7 +5,7 @@ import React from 'react';
 
 const ToogleBtn = ({ setToogleBtn }) => {
     return (
-        <div className='mt-15'>
+        <div className='mt-15 '>
             <h2 className='text-5xl font-bold text-center mb-2'>Premium Digital Tools</h2>
             <p className='text-base font-normal text-gray-500 text-center'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity. </p>
            <div className='p-0.5 rounded-full border border-gray-200 w-max flex gap-3 mx-auto mt-6'>
