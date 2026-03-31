@@ -10,6 +10,7 @@ import Cart from './components/Cart/Cart';
 import Steps from './components/Steps/Steps';
 import Pricing from './components/Pricing/Pricing';
 import Workflow from './components/Workflow/Workflow';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -38,7 +39,8 @@ const [cartsData, setCartsData] = useState([]);
     <main className="overflow-x-hidden p-5 ">
        <ToogleBtn
        toogleBtn={toogleBtn}
-        setToogleBtn={setToogleBtn} />
+        setToogleBtn={setToogleBtn}
+         cartsData={cartsData} />
 
            <Suspense fallback={<div 
               className='container mx-auto flex justify-center items-center h-96'>
@@ -63,9 +65,11 @@ const [cartsData, setCartsData] = useState([]);
         
     </main>
 
-
-    </section>
-  )
-}
+      <footer className='overflow-x-hidden'>
+         <Footer/>
+     </footer>
+   </section>
+  );
+};
 
 export default App

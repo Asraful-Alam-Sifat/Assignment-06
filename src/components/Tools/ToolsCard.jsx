@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import CheckIcon from '../../assets/Check.png';
+import { toast } from 'react-toastify';
 
 const ToolsCard = ({tool, cartsData, setCartsData}) => {
     const [isSoldOut, setIsSoldOut] = useState(false);
 
     const handleSoldOut = () => {
+        toast(`${tool.name} successfully added to cart!`, { type: 'success' });
         setIsSoldOut(true);
         if(isSoldOut) return;
         setCartsData([...cartsData, tool]);
@@ -48,7 +50,7 @@ const ToolsCard = ({tool, cartsData, setCartsData}) => {
 
                     <button 
                     onClick={handleSoldOut }
-                    className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-4 rounded-full font-bold text-xl text-white mr-7 hover:from-[#6351f8] hover:to-[#a83dfc] w-full'>{isSoldOut ? 'Sold Out' : 'Buy Now'}</button>
+                    className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-4 rounded-full font-bold text-xl text-white mr-7 hover:from-[#6351f8] hover:to-[#a83dfc] w-full'>{isSoldOut ? 'Added to cart' : 'Buy Now'}</button>
 
                 </div>
     );

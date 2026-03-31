@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { toast } from "react-toastify";
+
 
 const RemoveTools = ({ cart, cartsData, setCartsData }) => {
     // const [remove, setRemove] = useState(false);
@@ -7,6 +8,7 @@ const RemoveTools = ({ cart, cartsData, setCartsData }) => {
         const index = cartsData.findIndex(item => item.id === id);
 
         if(index !== -1){
+            toast(`${cart.name} successfully removed from cart!`, { type: 'warning' });
             cartsData.splice(index, 1);
             setCartsData([...cartsData]);
         }

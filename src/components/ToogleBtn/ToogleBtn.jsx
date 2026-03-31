@@ -3,7 +3,7 @@ import React from 'react';
 
 
 
-const ToogleBtn = ({  setToogleBtn, toogleBtn }) => {
+const ToogleBtn = ({  setToogleBtn, toogleBtn, cartsData }) => {
     return (
         <div className='mt-15 '>
             <h2 className='text-5xl font-bold text-center mb-2'>Premium Digital Tools</h2>
@@ -28,7 +28,7 @@ const ToogleBtn = ({  setToogleBtn, toogleBtn }) => {
                    ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:from-[#6351f8] hover:to-[#a83dfc]'
                     : 'text-gray-500 hover:text-gray-700' 
                 }`}
-            >Cart (0)</button>
+            >Cart ({cartsData.length})</button>
            </div>
           
             
