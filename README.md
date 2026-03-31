@@ -1,16 +1,40 @@
-# React + Vite
+#  DigiTools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiTools is a simple platform where you can find and use useful digital tools — all in one place!
 
-Currently, two official plugins are available:
+ **Live Site:** [digitools-platform.netlify.app](https://digitools-platform.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+##  About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+DigiTools is a web app that is easy to use, looks great on any device, and gives you quick feedback when you interact with it.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Technologies Used
+
+-  **React.js** — for building the UI
+-  **Tailwind CSS** — for styling
+-  **DaisyUI** — for ready-made components
+-  **JavaScript (ES6+)** — for logic
+-  **React-Toastify** — for toast notifications
+-  **JSON** — for storing tool/product data
+
+---
+
+##  Features
+
+
+**1.  Toast Notifications**
+You get a little popup message whenever you do something — like adding a tool — so you always know what's happening.
+
+**2.  Works on All Devices**
+The app looks good and works well on phones, tablets, and desktops.
+
+---
+
+
+##  Thanks for visiting!
+
+If you like this project, feel free to ⭐ star it on GitHub!
