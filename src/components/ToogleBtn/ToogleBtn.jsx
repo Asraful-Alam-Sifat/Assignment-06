@@ -3,7 +3,7 @@ import React from 'react';
 
 
 
-const ToogleBtn = ({ setToogleBtn }) => {
+const ToogleBtn = ({  setToogleBtn, toogleBtn }) => {
     return (
         <div className='mt-15 '>
             <h2 className='text-5xl font-bold text-center mb-2'>Premium Digital Tools</h2>
@@ -13,12 +13,22 @@ const ToogleBtn = ({ setToogleBtn }) => {
               <button 
               onClick={() => setToogleBtn('Products')}
                 id='ProductsBtn'
-              className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-medium text-xl rounded-full px-4 py-2 hover:from-[#6351f8] hover:to-[#a83dfc]'>Products</button>
+              className={`btn  font-medium text-xl rounded-full px-4 py-5.5 transition-all duration-300
+                ${toogleBtn === 'Products'
+                   ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:from-[#6351f8] hover:to-[#a83dfc]'
+                    : 'text-gray-500 hover:text-gray-700' 
+                }`}
+            >Products</button>
 
               <button 
               onClick={() => setToogleBtn('Cart')}
                 id='cartBtn'
-              className='btn rounded-full px-4 py-5.5 font-medium text-xl '>Cart (0)</button>
+              className={`btn rounded-full px-4 py-5.5 font-medium text-xl transition-all duration-300
+                 ${toogleBtn === 'Cart'
+                   ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:from-[#6351f8] hover:to-[#a83dfc]'
+                    : 'text-gray-500 hover:text-gray-700' 
+                }`}
+            >Cart (0)</button>
            </div>
           
             

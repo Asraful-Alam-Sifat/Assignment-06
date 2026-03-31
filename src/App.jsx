@@ -8,6 +8,7 @@ import ToogleBtn from './components/ToogleBtn/ToogleBtn';
 import Tools from './components/Tools/Tools';
 import Cart from './components/Cart/Cart';
 import Steps from './components/Steps/Steps';
+import Pricing from './components/Pricing/Pricing';
 
 
 
@@ -34,10 +35,10 @@ const [cartsData, setCartsData] = useState([]);
     </header>
     
     <main className="overflow-x-hidden p-5 ">
-
        <ToogleBtn
-        setToogleBtn={setToogleBtn} 
-       />
+       toogleBtn={toogleBtn}
+        setToogleBtn={setToogleBtn} />
+
            <Suspense fallback={<div 
               className='container mx-auto flex justify-center items-center h-96'>
                 <span 
@@ -55,6 +56,8 @@ const [cartsData, setCartsData] = useState([]);
            <section className='bg-base-200 w-full'>
             <Steps/>
            </section>
+           
+           <Pricing/>
         
     </main>
 
