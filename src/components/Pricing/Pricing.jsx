@@ -4,7 +4,7 @@ import { Check } from 'lucide-react';
 
 const Pricing = () => {
     return (
-        <div className='max-w-260 mx-auto mt-20'>
+        <div className='max-w-260 mx-auto my-20'>
             <div>
                 <h2 className='font-bold text-5xl text-center'>Simple, Transparent Pricing</h2>
                 <p className='font-medium text-base text-gray-500 text-center mt-3 '>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>

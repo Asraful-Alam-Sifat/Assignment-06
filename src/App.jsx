@@ -9,6 +9,7 @@ import Tools from './components/Tools/Tools';
 import Cart from './components/Cart/Cart';
 import Steps from './components/Steps/Steps';
 import Pricing from './components/Pricing/Pricing';
+import Workflow from './components/Workflow/Workflow';
 
 
 
@@ -58,6 +59,7 @@ const [cartsData, setCartsData] = useState([]);
            </section>
            
            <Pricing/>
+           <Workflow/>
         
     </main>
 
