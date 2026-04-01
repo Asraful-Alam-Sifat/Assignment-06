@@ -25,7 +25,6 @@ function App() {
 const toolsPromise = getTools();
 const [toogleBtn, setToogleBtn] = useState('Products');
 const [cartsData, setCartsData] = useState([]);
-// console.log(cartsData);
 
 
   return (
@@ -36,7 +35,7 @@ const [cartsData, setCartsData] = useState([]);
         <StatsBar/>
     </header>
     
-    <main className="overflow-x-hidden p-5 ">
+    <main className="overflow-x-hidden  ">
        <ToogleBtn
        toogleBtn={toogleBtn}
         setToogleBtn={setToogleBtn}

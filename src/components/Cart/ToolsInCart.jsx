@@ -3,7 +3,6 @@ import RemoveTools from './RemoveTools';
 
 const ToolsInCart = ({ cartsData, setCartsData }) => {
     
-    //  console.log(cartsData);
     return (
         <div>
             {cartsData.map(cart => 

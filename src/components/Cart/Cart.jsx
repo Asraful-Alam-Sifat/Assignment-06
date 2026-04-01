@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 const Cart = ({ cartsData, setCartsData }) => {
     const [proceed, setProceed] = useState(false);
-    // console.log(proceed);
+   
     const proceedHandler = () => {
         toast("Proceeding to checkout!", { type: 'info' });
             setProceed(true);

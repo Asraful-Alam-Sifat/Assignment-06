@@ -2,7 +2,6 @@ import { toast } from "react-toastify";
 
 
 const RemoveTools = ({ cart, cartsData, setCartsData }) => {
-    // const [remove, setRemove] = useState(false);
 
     const removeHandler = (id) => {
         const index = cartsData.findIndex(item => item.id === id);
